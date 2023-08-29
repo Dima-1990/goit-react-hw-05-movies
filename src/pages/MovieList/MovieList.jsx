@@ -23,7 +23,6 @@ const MovieList = ({list}) => {
     setLoader(true);
     const data = await SearchTrend();
     const results = await data.results;
-    console.log(results);
     setMovies(results);
     return setLoader(false);
   };
